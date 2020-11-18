@@ -1,0 +1,29 @@
+version: '2.2'
+services:
+  kubernetes:
+    image: k0sproject/k0s
+    restart: always
+    container_name: kubernetes
+    hostname: kubernetes
+    privileged: true
+    environment:
+      - TZ=Asia/Taipei
+    ports:
+      - 6443:6443
+    volumes:
+      - k0s-data:/var/lib/k0s
+
+  demo-client:
+    image: google/cloud-sdk:297.0.1
+    restart: always
+    container_name: demo-client
+    hostname: demo-client
+    command: tail -f /dev/null
+    environment:
+      - TZ=Asia/Taipei
+    volumes:
+      - k0s-data:/var/lib/k0s
+      - ./helm-install.sh:/helm-install.sh
+
+volumes:
+  k0s-data: 
