@@ -1,4 +1,4 @@
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+curl -s https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
 # OPTIONAL: Install bash-completion
 apt update
@@ -10,7 +10,7 @@ source <(kubectl completion bash)
 # OPTIONAL: Install Helm Plugin
 helm plugin install https://github.com/databus23/helm-diff
 
-# Setting the KUBECONFIG
+# Setting the KUBECONFIG to connect the kubernetes
 cp /var/lib/k0s/pki/admin.conf /admin.conf
 sed -i 's/localhost/kubernetes/g' /admin.conf
 chmod 600 /admin.conf

@@ -6,19 +6,18 @@
 $ docker-compose up -d
 ```
 
-## Entry the demo client
+## Entry the demo client and install the Helm
 
 ```bash
 $ docker exec -it demo-client bash
+$ . helm-installer.sh
 ```
 
-## Install the helm and set the KubeConfig
+Now, you can find charts on the https://artifacthub.io/
 
-```bash
-$ . ./helm-install.sh
-```
+---
 
-## Stop and remove service
+## After testing, you can stop and remove the services
 
 ```
 $ docker-compose down -v
