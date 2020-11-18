@@ -1,4 +1,6 @@
-# JCConf Helm Demo 
+# JCConf Helm Demo
+
+This is a small project can help you to make a clean environment to learning Kubernetes and Helm.
 
 ## Running the Kubernetes service and demo client at local
 
