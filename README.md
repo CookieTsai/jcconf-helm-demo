@@ -12,9 +12,15 @@ $ docker-compose up -d
 $ docker exec -it demo-client bash
 ```
 
-### Install the helm and set the KubeConfig
+## Install the helm and set the KubeConfig
 
 ```bash
 $ . ./helm-install.sh
+```
+
+## Stop and remove service
+
+```
+$ docker-compose down -v
 ```
 
