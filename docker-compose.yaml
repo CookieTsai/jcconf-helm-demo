@@ -23,7 +23,7 @@ services:
       - TZ=Asia/Taipei
     volumes:
       - k0s-data:/var/lib/k0s
-      - ./helm-install.sh:/helm-install.sh
+      - ./helm-installer.sh:/helm-installer.sh
 
 volumes:
   k0s-data: 
