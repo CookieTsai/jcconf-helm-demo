@@ -15,7 +15,7 @@ docker exec -it demo-client bash
 . helm-installer.sh
 ```
 
-Now, you can find charts on the https://artifacthub.io/
+Now, you can find charts on the [artifacthub.io](https://artifacthub.io/).
 
 ---
 
