@@ -19,7 +19,7 @@ Now, you can find charts on the [artifacthub.io](https://artifacthub.io/).
 
 ---
 
-## After the testing, you can stop and remove the services
+## After learning, you can stop and remove the services.
 
 ```bash
 docker-compose down -v
